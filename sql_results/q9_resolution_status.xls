@@ -1,0 +1,5 @@
+resolution_status,total_complaints,percentage,avg_satisfaction
+Resolved,6470,25.88,2.99
+Escalated,6212,24.85,3.0
+Closed-Unresolved,6175,24.7,2.97
+Pending,6143,24.57,3.02

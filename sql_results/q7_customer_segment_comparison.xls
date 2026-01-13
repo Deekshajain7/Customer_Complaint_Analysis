@@ -1,0 +1,3 @@
+is_high_value_customer,total_complaints,avg_resolution_hours,avg_satisfaction,pct_fast_resolution
+Regular,19484,100.92,2.99,11.73
+High-Value,4249,99.84,3.07,11.53

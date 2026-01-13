@@ -1,0 +1,13 @@
+is_holiday_season,total_complaints,avg_resolution_hours,complaint_category,category_count
+Holiday Season,1416,99.11,product_quality,1416
+Holiday Season,1118,101.77,customer_service,1118
+Holiday Season,450,96.88,order_issue,450
+Holiday Season,396,100.97,billing,396
+Holiday Season,275,94.06,delivery,275
+Holiday Season,237,99.59,technical,237
+Regular Season,6972,101.05,product_quality,6972
+Regular Season,5682,101.08,customer_service,5682
+Regular Season,2332,99.05,billing,2332
+Regular Season,2233,101.26,order_issue,2233
+Regular Season,1471,103.04,delivery,1471
+Regular Season,1151,100.63,technical,1151

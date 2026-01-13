@@ -1,0 +1,7 @@
+complaint_category,total_complaints,avg_resolution_hours,min_hours,max_hours
+delivery,1746,101.63,1.0,200.0
+customer_service,6800,101.2,1.0,200.0
+product_quality,8388,100.73,1.0,200.0
+order_issue,2683,100.52,1.0,200.0
+technical,1388,100.45,1.0,200.0
+billing,2728,99.33,1.0,200.0

@@ -1,0 +1,5 @@
+priority_level,total_complaints,avg_satisfaction,avg_resolution_hours
+critical,2374,2.99,100.99
+high,5378,2.99,99.63
+medium,2908,3.0,100.55
+low,6059,3.01,101.47

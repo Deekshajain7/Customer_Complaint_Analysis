@@ -1,0 +1,6 @@
+channel,total_complaints,avg_resolution_hours,avg_satisfaction
+email,6032,99.82,3.01
+in-store,3026,100.61,2.96
+social media,2952,100.98,3.02
+chat,5915,101.01,3.02
+phone,5808,101.31,2.98
