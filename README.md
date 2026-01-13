@@ -205,10 +205,14 @@ Created 13 new analytical features:
 
 ## 👤 About This Project
 **Author:** Deeksha Jain
+
 **Role:** Data Analyst
+
 **Project Type:** Portfolio Project - Data Analytics
+
 **Duration:** 7 days (learning project)
-**Date:** february 2025
+
+**Date:** 2025
 
 Contact: deekshadineshjain@gmail.com | https://www.linkedin.com/in/deekshajain7
 
