@@ -117,15 +117,15 @@ python scripts/day6_advanced_viz.py
 ## 📊 Sample Visualizations
 
 ### Monthly Complaint Trends
-![Monthly Trends](visualizations/01_monthly_trends.png)
+![Monthly Trends](visualization/01_monthly_trends.png)
 
 ### Complaint Categories Distribution
-![Categories](visualizations/02_complaint_categories.png)
+![Categories](visualization/02_complaint_categories.png)
 
 ### Executive Dashboard
-![Dashboard](visualizations/13_executive_dashboard.png)
+![Dashboard](visualization/13_executive_dashboard.png)
 
-*View all 13 visualizations in the `/visualizations` folder*
+*View all 13 visualizations in the `/visualization` folder*
 
 ---
 
