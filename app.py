@@ -1,35 +1,58 @@
 import streamlit as st
 import pandas as pd
 
-st.set_page_config(page_title="Customer Complaint Analysis", layout="wide")
+# Page configuration
+st.set_page_config(
+    page_title="Customer Complaint Analysis Dashboard",
+    layout="wide"
+)
 
+# Title
 st.title("📊 Customer Complaint Analysis Dashboard")
+st.write("Upload a CSV or Excel file to analyze customer complaints")
 
-st.write("Upload a CSV file to analyze customer complaints")
-
-uploaded_file = st.file_uploader("Upload CSV file", type=["csv"])
+# File uploader (CSV + Excel supported)
+uploaded_file = st.file_uploader(
+    "Upload CSV or Excel file",
+    type=["csv", "xls", "xlsx"]
+)
 
 if uploaded_file is not None:
     try:
-        df = pd.read_csv(uploaded_file)
+        # Read file based on extension
+        if uploaded_file.name.endswith(".csv"):
+            df = pd.read_csv(uploaded_file)
+        else:
+            df = pd.read_excel(uploaded_file)
 
-        st.subheader("Dataset Preview")
+        # Dataset preview
+        st.subheader("📄 Dataset Preview")
         st.dataframe(df.head())
 
-        st.subheader("Dataset Shape")
-        st.write("Rows:", df.shape[0])
-        st.write("Columns:", df.shape[1])
+        # Dataset information
+        st.subheader("📌 Dataset Information")
+        col1, col2 = st.columns(2)
+        col1.metric("Number of Rows", df.shape[0])
+        col2.metric("Number of Columns", df.shape[1])
 
-        if df.shape[1] > 0:
-            col = df.columns[0]
-            st.subheader(f"Top values in `{col}`")
-            value_counts = df[col].value_counts().head(10)
-            st.bar_chart(value_counts)
+        # Column selection for analysis
+        st.subheader("📊 Column-wise Analysis")
+        selected_column = st.selectbox(
+            "Select a column to analyze",
+            df.columns
+        )
 
-        st.success("Analysis completed successfully ✅")
+        # Value counts visualization
+        value_counts = df[selected_column].value_counts().head(10)
+
+        st.write(f"Top 10 values in **{selected_column}**")
+        st.bar_chart(value_counts)
+
+        st.success("✅ Analysis completed successfully")
 
     except Exception as e:
-        st.error("Error while processing the file")
+        st.error("❌ Error while processing the file")
         st.error(e)
+
 else:
-    st.info("Please upload a CSV file to continue")
+    st.info("ℹ️ Please upload a CSV or Excel file to continue")
